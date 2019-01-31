@@ -1,0 +1,25 @@
+{
+  "name": "frank-houweling/zend-session-controller-plugin",
+  "description": "Controller plugin to retrieve a session container from the zend session manager",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "zend-session",
+    "zend-framework",
+    "session"
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.1",
+    "zendframework/zend-session": "^2.7",
+    "zendframework/zend-config": "^2.6",
+    "zendframework/zend-mvc": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "FrankHouweling\\ZendSessionControllerPlugin\\": "src/"
+    }
+  }
+}
