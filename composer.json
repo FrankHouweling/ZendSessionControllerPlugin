@@ -13,9 +13,9 @@
   "prefer-stable": true,
   "require": {
     "php": "^7.1",
-    "zendframework/zend-session": "^2.7",
-    "zendframework/zend-config": "^2.6",
-    "zendframework/zend-mvc": "^2.7"
+    "zendframework/zend-session": "^2.8",
+    "zendframework/zend-config": "^3",
+    "zendframework/zend-mvc": "^3"
   },
   "autoload": {
     "psr-4": {
