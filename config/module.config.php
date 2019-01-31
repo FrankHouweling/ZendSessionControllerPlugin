@@ -9,6 +9,7 @@
 namespace FrankHouweling\ZendSessionControllerPlugin;
 
 use FrankHouweling\ZendSessionControllerPlugin\ControllerPlugin\Session;
+use FrankHouweling\ZendSessionControllerPlugin\Factory\ControllerPlugin\SessionFactory;
 
 return [
     'session_containers' => [
@@ -16,7 +17,7 @@ return [
     ],
     'controller_plugins' => [
         'factories' => [
-            Session::class => ,
+            Session::class => SessionFactory::class,
         ],
         'aliases' => [
             'session' => Session::class,
