@@ -22,23 +22,23 @@ final class Session extends AbstractPlugin
     public const DEFAULT_SESSION_CONTAINER_NAMESPACE = 'Global';
 
     /** @var SessionManager */
-    private $sessionManager;
+    private $container;
 
     /**
      * Session constructor.
      * @param SessionManager $sessionManager
      */
-    public function __construct(SessionManager $sessionManager)
+    public function __construct(Container $container)
     {
-        $this->sessionManager = $sessionManager;
+        $this->container = $container;
     }
 
     /**
      * @param string|null $sessionContainerNamespace
      * @return Container
      */
-    public function __invoke(string $sessionContainerNamespace = null): Container
+    public function __invoke(): Container
     {
-        return $this->sessionManager->get($sessionContainerNamespace ?? self::DEFAULT_SESSION_CONTAINER_NAMESPACE);
+        return $this->container;
     }
 }
